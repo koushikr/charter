@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+       <title> Data Visual </title>
+        <!-- CSS -->
+		<link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" type="text/css" href="../lib/jQuery/tipsy/tipsy.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/chosen/chosen.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/minicolors/jquery.miniColors.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/slickgrid/slick.grid.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Aristo/Aristo.css"/>	
+        <link rel="stylesheet" type="text/css" href="css/structure.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+
+		<script type="text/javascript" src="lib/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="lib/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="../lib/js/jlinq.js"></script>
+		<script type="text/javascript" src="../lib/js/jPaq.js"></script>
+		<script type="text/javascript" src="../lib/protovis/protovis-d3.3.js"></script>
+		<script type="text/javascript" src="../lib/jQuery/tipsy/jquery.tipsy.js"></script>
+		<script type="text/javascript" src="../lib/jQuery/tipsy/tipsy.js"></script>
+		<script type="text/javascript" src="../src/aurora.js"></script>
+		<script type="text/javascript" src="../src/bar.js"></script>
+		<script type="text/javascript" src="../src/wedge.js"></script>
+		<script type="text/javascript" src="../src/utility.js"></script>
+		<script type="text/javascript" src="../src/bubble.js"></script>
+		<script type="text/javascript" src="../src/area.js"></script>
+		<script type="text/javascript" src="../src/line.js"></script>
+		<script type="text/javascript" src="../src/tree.js"></script>
+		<script type="text/javascript" src="../src/bullet.js"></script>
+		<script type="text/javascript" src="../src/tableDisplay.js"></script>		
+
+		<script src="lib/jquery.event.drag-2.0.min.js"></script>
+		<script src="lib/slickgrid/slick.core.js" type="text/javascript"></script>
+		<script src="lib/slickgrid/plugins/slick.checkboxselectcolumn.js"></script>
+		<script src="lib/slickgrid/plugins/slick.cellrangedecorator.js"></script>
+		<script src="lib/slickgrid/plugins/slick.cellrangeselector.js"></script>
+		<script src="lib/slickgrid/plugins/slick.cellselectionmodel.js"></script>
+		<script src="lib/slickgridplugins/slick.cellselectionmodel.js"></script>
+		<script src="lib/slickgrid/plugins/slick.rowselectionmodel.js"></script>
+		<script src="lib/slickgrid/slick.editors.js"></script>
+		<script src="lib/slickgrid/slick.grid.js"></script>
+		<script src="lib/chosen/chosen.jquery.js" type="text/javascript"></script>
+
+		<script type="text/javascript" src="lib/minicolors/jquery.miniColors.min.js"></script>
+		
+
+    </head>
+        
+    <body id="public">
+        <div class="contentContainer">
+			<div id="fixed-menu-top">
+
+				<div id="goback">
+					<a href="dash.html"><img src="css/images/back.png" alt="Back" /></a>
+				</div>	
+
+		    	<div id="fixed-menu-top-content">
+		        	<div class="logo">
+		            	<span class="logotxt">Data Visual</span>
+		            </div>
+				</div>
+		    </div>
+
+	        <div class="leftContent">
+	            <div class="callForActionLeft">
+	                parameters
+	            </div>
+	            
+				<fieldset id="AxisSelector" >
+
+					<legend>Columns</legend>
+					<label>-Categories</label>
+				 	<select class="chzn-select fields" id="catcolumns" multiple="true"></select>
+					<label>-Measures</label>
+				 	<select class="chzn-select numfields" id="meacolumns" multiple="true"></select>
+
+
+					<legend>Rows</legend> 
+					<label>-Categories</label>
+				 	<select class="chzn-select fields" id="catrows" multiple="true"></select>
+					<label>-Measures</label>
+				 	<select class="chzn-select numfields" id="mearows" multiple="true"></select>
+				 	
+					<label>Group by</label>
+				 	<select class="chzn-select fields" id="groups" multiple="true"></select>
+
+					<label>Sort by</label> 
+				 	<select class="chzn-select fields" id="orders" multiple="true"></select>
+				 	
+					<label>Color</label>
+				 	<select class="chzn-select fields auto" id="colorMark"></select>
+
+					<label>Size</label> 
+				 	<select class="chzn-select fields auto" id="sizeMark"></select>
+				 	
+				</fieldset>
+	            
+				</div>
+	            
+            </div>
+            <div class="rightContent">
+				<div id="tableDisplay">
+				</div>
+            </div>
+	
+			</div>
+
+		</div>
+		
+		<script type="text/javascript" src="js/carsdata.js"></script>		
+		<script type="text/javascript" src="js/tableDisplayGen.js"></script>		
+
+		<script type="text/javascript">
+			var tdg = new ARV.TabelDisplayGen();
+		</script>
+		
+	</body>
+</html>
+
