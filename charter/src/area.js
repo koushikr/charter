@@ -139,7 +139,7 @@ AR.StackedAreaGraph.prototype = new AR.Graph();
  * @param {object}
  *            [seriesname] If given defined then this area object is a part for multi series area graph and series name is <b>seriesname</b>
  *
- * @author Aditya Gaur
+ * @author: Aditya Gaur
  */
 
 AR.Area = function(parentDimension, panel, graphDef, dataObj, color, seriesname, seriesNumber) {
